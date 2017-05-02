@@ -1,0 +1,6 @@
+
+target 'Demo' do
+
+  pod 'MSWebViewJavaScriptBridge', path: '..'
+
+end

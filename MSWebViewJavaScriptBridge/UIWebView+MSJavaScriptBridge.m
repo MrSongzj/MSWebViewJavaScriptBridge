@@ -35,7 +35,7 @@ void registerHandlerForJSContext(JSContext *jsContext, NSString *handlerName, NS
         id jsArgs;
         if (arguments.count > 1) {
             jsArgs = [NSMutableArray arrayWithCapacity:arguments.count];
-            for (NSInteger i = 0; i < arguments.count; i ++) {
+            for (NSUInteger i = 0; i < arguments.count; i ++) {
                 JSValue *value = arguments[i];
                 id obj = value.toObject;
                 if (obj) {

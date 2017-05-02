@@ -1,0 +1,16 @@
+PODS:
+  - MSWebViewJavaScriptBridge (0.0.1)
+
+DEPENDENCIES:
+  - MSWebViewJavaScriptBridge (from `..`)
+
+EXTERNAL SOURCES:
+  MSWebViewJavaScriptBridge:
+    :path: ..
+
+SPEC CHECKSUMS:
+  MSWebViewJavaScriptBridge: 6a7067c430f36cdd362d6db27050665ad7191e83
+
+PODFILE CHECKSUM: 184dedee6fe8ef25979e0575f0b4167dba807090
+
+COCOAPODS: 1.2.0
