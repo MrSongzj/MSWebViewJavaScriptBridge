@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div style="margin-top: 0px">
+            <h1>第一个页面</h1>
+            <script>
+                log()
+                </script>
+            <input type="button" value="takePhoto" onclick="takePhoto()">
+                </div>
+        <div>
+            <input type="button" value="pay" onclick="pay({'name': 'iPhone 1', 'price': 10})">
+                </div>
+        <div>
+            <input type="button" value="nextPage" onclick="nextPage()">
+                </div>
+        <script>
+            var takePhotoCallback = function(photo) {
+                alert(photo)
+            }
+            var payResult = function(result) {
+                if (result == 0) {
+                    alert("支付成功")
+                }
+            }
+            var nextPage = function() {
+                this.location='test2.html'
+            }
+            var showAlert = function(msg) {
+                alert(msg);
+                showAlertCallback('js callback oc')
+            }
+        </script>
+    </body>
+</html>

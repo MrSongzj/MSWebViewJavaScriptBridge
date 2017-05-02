@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XNQ-Wf-Uxt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="w6Q-By-8c6">
+            <objects>
+                <viewController id="XNQ-Wf-Uxt" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hn4-DM-zmV"/>
+                        <viewControllerLayoutGuide type="bottom" id="BFJ-Yf-P36"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4ui-dc-sbL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f85-vL-smB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="XNQ-Wf-Uxt" id="YUf-q9-0Xs"/>
+                                </connections>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlY-n0-mpc">
+                                <rect key="frame" x="140" y="318" width="95" height="30"/>
+                                <state key="normal" title="callJSHandler"/>
+                                <connections>
+                                    <action selector="callJSHandler" destination="XNQ-Wf-Uxt" eventType="touchUpInside" id="Lmi-8J-Nhw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MlY-n0-mpc" firstAttribute="centerX" secondItem="4ui-dc-sbL" secondAttribute="centerX" id="8iT-PZ-dDE"/>
+                            <constraint firstItem="BFJ-Yf-P36" firstAttribute="top" secondItem="f85-vL-smB" secondAttribute="bottom" id="9xi-xO-8NJ"/>
+                            <constraint firstItem="MlY-n0-mpc" firstAttribute="centerY" secondItem="4ui-dc-sbL" secondAttribute="centerY" id="EcT-G3-ib5"/>
+                            <constraint firstAttribute="trailing" secondItem="f85-vL-smB" secondAttribute="trailing" id="UBT-Wa-Pv5"/>
+                            <constraint firstItem="f85-vL-smB" firstAttribute="top" secondItem="4ui-dc-sbL" secondAttribute="top" id="ZiO-v4-aLk"/>
+                            <constraint firstItem="f85-vL-smB" firstAttribute="leading" secondItem="4ui-dc-sbL" secondAttribute="leading" id="lR0-8t-LZK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="wv" destination="f85-vL-smB" id="pYv-KQ-DUe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2I7-n3-8hC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="-672"/>
+        </scene>
+    </scenes>
+</document>

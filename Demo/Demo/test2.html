@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            </head>
+    <body>
+        <div style="margin-top: 0px">
+            <h1>第二个页面</h1>
+            <script>
+                log()
+                </script>
+            <input type="button" value="takePhoto" onclick="takePhoto()">
+                </div>
+        <div>
+            <input type="button" value="pay" onclick="pay({'name': 'iPhone 1', 'price': 10})">
+                </div>
+        <script>
+            var takePhotoCallback = function(photo) {
+                alert(photo)
+            }
+            var payResult = function(result) {
+                if (result == 0) {
+                    alert("支付成功")
+                }
+            }
+            var showAlert = function(msg) {
+                alert(msg);
+                showAlertCallback('js callback oc')
+            }
+        </script>
+    </body>
+</html>
