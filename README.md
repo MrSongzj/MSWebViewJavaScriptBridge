@@ -4,7 +4,7 @@
 与著名的 [WebViewJavaScript](https://github.com/marcuswestin/WebViewJavascriptBridge) 相比：
 
 * 优点：
-	* 前端不需要依赖额外的第三方库，可以方便的适配 iOS 和 Android
+	* 对 JS 代码没有任何要求，可以方便的适配 iOS 和 Android
 	* 是 UIWebView 的分类，而且对 UIWebView 的其他功能没有任何侵入，所以使用起来更加简单
 * 缺点：
 	* 需要指定回调方法的名称
