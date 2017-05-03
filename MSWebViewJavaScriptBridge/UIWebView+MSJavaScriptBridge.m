@@ -79,7 +79,7 @@ NSString *wholeNameOfCallback(NSString *callbackName)
 
 @end
 
-@interface UIWebView () <UIWebViewDelegate>
+@interface UIWebView ()
 
 @property (nonatomic, assign) BOOL ms_isRegistered;
 @property (nonatomic, strong) JSContext *ms_jsContext;
